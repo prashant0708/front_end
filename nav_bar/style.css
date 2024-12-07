@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(161, 160, 160, 0.418);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav_bar1 {
+  background-color: rgb(90, 93, 93);
+  padding: 20px;
+}
+
+.nav_bar1 ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0; /*  list element has some in built margin so removing */
+  padding: 0; /*  list element has some in built margin so removing */
+}
+
+.nav_bar1 li {
+  display: inline; /*all the li element is block level element hence i want to make it inline*/
+  font-weight: bold;
+}
+
+.nav_bar1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 5px 15px;
+  position: relative;
+  /* this relative is for underline over effect */
+}
+
+.nav_bar1 .button {
+  background-color: rgb(3, 9, 9);
+  border: none;
+  padding: 5px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.nav_bar1 .button:hover {
+  cursor: pointer;
+  background-color: #0c0c0c2e;
+}
+
+.nav_bar1 a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(245, 245, 249);
+  transform: scaleX(0);
+  transition-property: margin-right, color;
+}
+
+.nav_bar1 a:hover::after {
+  content: "";
+  transform: scaleX(1);
+}
+
+/* Second nav bar design */
+
+.nav_bar2 {
+  background-color: rgb(3, 51, 46);
+  width: 200px;
+  padding: 20px;
+}
+
+.nav_bar2 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav_bar2 li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.nav_bar2 a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 25px;
+}
+
+.nav_bar2 a:hover {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav_bar2 .button {
+  border: none;
+  border-radius: 5px;
+  color: rgb(246, 245, 244);
+  font-size: 25px;
+  background-color: rgb(193, 119, 23);
+  padding: 5px 10px;
+  width: 100%;
+}
+.nav_bar2 .button:hover {
+  background-color: rgb(222, 167, 94);
+  width: 100%;
+}
+.nav_bar2 span {
+  position: relative;
+}
+
+.nav_bar2 span::after {
+  content: "";
+  transform: scaleX(0);
+  background-color: rgb(246, 245, 244);
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.nav_bar2 span:hover::after {
+  transform: scaleX(1);
+}
+
+/* Third nav bar work */
+
+.nav_bar3 {
+  background-color: rgb(4, 88, 88);
+  padding: 20px;
+}
+
+.nav_bar3 ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0; /*  list element has some in built margin so removing */
+  padding: 0; /*  list element has some in built margin so removing */
+}
+
+.nav_bar3 li {
+  font-weight: bold;
+}
+
+.nav_bar3 a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+.nav_bar3 .button {
+  background-color: rgb(3, 9, 9);
+  border: none;
+  padding: 5px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.nav_bar3 .button:hover {
+  cursor: pointer;
+  background-color: #0c0c0c2e;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  background-color: rgb(23, 7, 7);
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.nav_bar3 a:hover {
+  font-weight: bolder;
+  color: rgb(194, 32, 32);
+}

@@ -1,0 +1,18 @@
+.page {
+  background-color: rgb(178, 198, 219);
+}
+
+.heading {
+  color: blueviolet;
+}
+
+.content,
+.content2 {
+  color: brown;
+}
+
+.content2 {
+  text-align: left;
+  font-size: 25px;
+  line-height: 30px;
+}

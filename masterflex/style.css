@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(245, 247, 247);
+}
+.container {
+  margin-bottom: 20px;
+  border: 2px solid black;
+
+  padding: 10px;
+}
+.flex-cantainer {
+  display: flex;
+  margin-bottom: 10px;
+  height: 200px;
+  align
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.pastel-1 {
+  background-color: pink;
+}
+.pastel-2 {
+  background-color: palegreen;
+}
+
+.pastel-3 {
+  background-color: skyblue;
+}
+
+.pastel-4 {
+  background-color: rgb(241, 241, 103);
+}
+
+.pastel-5 {
+  background-color: rgb(242, 235, 205);
+}
+
+.pastel-6 {
+  background-color: rgb(200, 157, 231);
+}
+h1,
+h2 {
+  font-size: 10px;
+}
+
+h1 {
+  margin: 10px;
+}

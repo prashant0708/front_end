@@ -1,0 +1,20 @@
+DOM- Document object Model
+Whenever we work with dom it is about
+How the page stractured ?
+How the page laid out?
+
+Flex have lot of Property
+
+Display:Flex
+flex-direction:row/columns -- to arrange the item vertically and horizentlly
+
+justify-content: center/end/start   -- it work horizently and applied to the sub content
+
+align-item:
+align-content:center/end/start   -- it work vertically and applied to the sub content
+
+flex wrap:
+flex wrap with align content:
+order
+flex grow
+align-self
