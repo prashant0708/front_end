@@ -1,0 +1,25 @@
+
+.carousel {
+    border-radius: 15px; /* Match the image border-radius */
+    overflow: hidden; /* Ensure the rounded effect applies */
+    position: relative;
+   
+  }
+.carousel-inner{
+  height:60vh  
+    
+}
+
+
+
+.navbar{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: space-between;
+    align-content: space-around;
+}
+
+
