@@ -28,7 +28,7 @@ body {
 }
 
 .card {
-  background-color: #2da0a8;
+  background-color: #d1dfbd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,6 +63,7 @@ body {
   height: 170px;
   border-radius: 50%;
 }
+
 
 .employee {
   flex-direction: column;
@@ -147,3 +148,100 @@ button:hover {
   cursor: pointer;
   opacity: 0.9;
 }
+
+
+
+/* second card bangalore image */
+.container_1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 170px 40px 100px;
+  gap: 5px;
+
+  background-color: #301b1b;
+  padding: 20px;
+  height: 450px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 10px 15px 400rem rgba(213, 144, 144, 0.2);
+}
+.blr_img{
+ 
+  overflow: hidden;
+  border-radius: 10px;
+  
+}
+
+.image_1{
+  max-width: 100%;
+ max-height: auto;
+}
+
+.like_share{
+  /* background-color: aliceblue; */
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(1,1fr);
+  gap: 2px;
+  height: 50%;
+}
+
+.impresation{
+  /* background-color: #2da0a8; */
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  gap:5px;
+}
+.hearts{
+  justify-content: flex-end;
+}
+
+.impresation p{
+  font-size: 10px;
+  top:6px;
+  position: relative;
+ 
+}
+
+.likes,.heart{
+  filter: invert(1) brightness(100); /* invert 1 change the black image into white  and vise versa */
+   /* opacity: 0.8; transperency of the element range b/w 0 to 1 */
+  width: 25px;
+  height: 25px;
+  
+  
+}
+
+.likes{
+  top:2px;
+  position: relative;
+}
+.heart{
+  top:6px;
+  position: relative;
+}
+
+
+.about{
+  font-size: small;
+  font-style: normal;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 15px;
+  opacity: 0.8;
+
+}
+
+/* third card bangalore image */
+.container_2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 170px 40px 100px;
+  gap: 5px;
+
+  background-color: #301b1b;
+  padding: 20px;
+  height: 450px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 10px 15px 400rem rgba(213, 144, 144, 0.2);
