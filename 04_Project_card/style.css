@@ -244,4 +244,56 @@ button:hover {
   height: 450px;
   width: 300px;
   border-radius: 20px;
-  box-shadow: 10px 15px 400rem rgba(213, 144, 144, 0.2);
+  box-shadow: 10px 15px 400rem rgba(213, 144, 144, 0.2)
+}
+.carousel{
+  position: relative;
+  overflow: hidden;
+}
+.carousel-btn{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 5px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-slides{
+  display: flex;
+}
+.carousel-btn.next {
+  right: 10px;
+}
+
+
+
+.carousel-btn::hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-slides{
+  border-radius: 10px;
+}
+
+
+.slide {
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: auto;
+  display: none; /*Hide all slides by default */
+  transition: opacity 0.5s ease; /* Smooth fade-in/out effect */
+}
+
+.slide.active {
+  display: block; /* Show the active slide */
+}
