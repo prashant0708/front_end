@@ -64,7 +64,6 @@ body {
   border-radius: 50%;
 }
 
-
 .employee {
   flex-direction: column;
   display: flex;
@@ -149,8 +148,6 @@ button:hover {
   opacity: 0.9;
 }
 
-
-
 /* second card bangalore image */
 .container_1 {
   display: grid;
@@ -165,78 +162,72 @@ button:hover {
   border-radius: 20px;
   box-shadow: 10px 15px 400rem rgba(213, 144, 144, 0.2);
 }
-.blr_img{
- 
+.blr_img {
   overflow: hidden;
   border-radius: 10px;
-  
 }
 
-.image_1{
+.image_1 {
   max-width: 100%;
- max-height: auto;
+  max-height: auto;
 }
 
-.like_share{
+.like_share {
   /* background-color: aliceblue; */
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(1,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   gap: 2px;
   height: 50%;
 }
 
-.impresation{
+.impresation {
   /* background-color: #2da0a8; */
   display: flex;
   align-items: center;
   padding-left: 10px;
-  gap:5px;
+  gap: 5px;
 }
-.hearts{
+.hearts {
   justify-content: flex-end;
 }
 
-.impresation p{
+.impresation p {
   font-size: 10px;
-  top:6px;
+  top: 6px;
   position: relative;
- 
 }
 
-.likes,.heart{
+.likes,
+.heart {
   filter: invert(1) brightness(100); /* invert 1 change the black image into white  and vise versa */
-   /* opacity: 0.8; transperency of the element range b/w 0 to 1 */
+  /* opacity: 0.8; transperency of the element range b/w 0 to 1 */
   width: 25px;
   height: 25px;
-  
-  
 }
 
-.likes{
-  top:2px;
+.likes {
+  top: 2px;
   position: relative;
 }
-.heart{
-  top:6px;
+.heart {
+  top: 6px;
   position: relative;
 }
 
-
-.about{
+.about {
   font-size: small;
   font-style: normal;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   line-height: 15px;
   opacity: 0.8;
-
 }
 
 /* third card bangalore image */
 .container_2 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 170px 40px 100px;
+  grid-template-rows: 230px 120px 100px;
   gap: 5px;
 
   background-color: #301b1b;
@@ -244,15 +235,15 @@ button:hover {
   height: 450px;
   width: 300px;
   border-radius: 20px;
-  box-shadow: 10px 15px 400rem rgba(213, 144, 144, 0.2)
+  box-shadow: 10px 15px 400rem rgba(213, 144, 144, 0.2);
 }
-.carousel{
+.carousel {
   position: relative;
   overflow: hidden;
 }
-.carousel-btn{
+.carousel-btn {
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -263,28 +254,31 @@ button:hover {
   border-radius: 5px;
 }
 
-
 .carousel-btn.prev {
   left: 10px;
 }
 
-.carousel-slides{
+.carousel-slides {
   display: flex;
 }
 .carousel-btn.next {
   right: 10px;
 }
 
-
-
-.carousel-btn::hover{
-  background-color: rgba(0, 0, 0, 0.8);
+.carousel-btn,
+button:hover {
+  background-color: rgba(166, 163, 163, 0.8);
+  color: rgb(145, 233, 38);
+  border: none;
+  font-size: 20px;
+  padding: 5px 5px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.carousel-slides{
+.carousel-slides {
   border-radius: 10px;
 }
-
 
 .slide {
   border-radius: 10px;
@@ -296,4 +290,113 @@ button:hover {
 
 .slide.active {
   display: block; /* Show the active slide */
+}
+/* ----------------Product details and price ----------------*/
+.product_details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100%;
+  gap: 5px;
+}
+
+.price h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  padding-left: 10px;
+  top: 40%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+.price h3:last-of-type {
+  margin-top: 10px;
+}
+
+.detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  position: relative;
+  top: 65%;
+  transform: translateY(-40%);
+  /* width: auto; */
+  background-color: #383a3b;
+  border-radius: 5px;
+}
+
+.detail a {
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.detail:hover {
+  background-color: #232323;
+}
+
+.buy {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buy button {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(134, 86, 86, 0.963);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  background-color: #818b72;
+  color: rgb(207, 204, 204);
+}
+
+.buy button:hover {
+  font-size: 20px;
+  background-color: #0a1313;
+}
+
+<!---------------------------------------->
+
+/* Make the popup visible when hovering over the "View Details" link */
+
+.modal {
+  position: absolute;
+}
+.modal {
+  display: none;
+  background-color: #882424;
+  padding: 20px;
+  width: 300px;
+}
+.details_link:hover + .modal {
+  display: block; /* Show modal */
+  position: absolute;
+  left: 150px; /*It will move right with reference of detail class div container because it is inside it.   */
+  background-color: #882424;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 30px;
+  font-size: 17px;
+}
+
+.close-btn {
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
 }

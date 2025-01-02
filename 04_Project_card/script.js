@@ -1,6 +1,6 @@
 let currentSlide = 0; // Index of the currently visible slide
 const slides = document.querySelectorAll(".slide"); // All slides
-const slideInterval = 5000; // Time interval in milliseconds (3 seconds)
+// const slideInterval = 5000; // Time interval in milliseconds (3 seconds)
 
 // Function to change slide
 function changeSlide(direction = 1) {
@@ -15,6 +15,8 @@ setInterval(() => {
 }, slideInterval);
 
 // Optional: Add event listeners to buttons for manual control
-document.querySelector(".prev").addEventListener("click", () => changeSlide(-1));
+document
+  .querySelector(".prev")
+  .addEventListener("click", () => changeSlide(-1));
 document.querySelector(".next").addEventListener("click", () => changeSlide(1));
 

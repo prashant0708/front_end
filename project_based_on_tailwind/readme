@@ -1,0 +1,22 @@
+Tailwind is way to write the css in the project
+
+-- How to setup tailwind 
+-- install tailwind plugin from the vs extension 
+-- install the node.js in the system.
+-- initilize the project 
+-- open the terminal and wrtie ''' npm init -y  don't use powershell for this'''
+
+'''
+Now install the tailwind using npn
+
+--- npm install -D tailwindcss 
+
+'''
+
+'''
+Initilize the tailwind
+ npx tailwindcss init
+'''
+
+
+

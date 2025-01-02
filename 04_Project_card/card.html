@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card</title>
     <link rel="stylesheet" href="style.css" />
-    
   </head>
   <body>
     <div class="card">
@@ -44,69 +43,101 @@
       </div>
       <div class="container_1">
         <div class="image-div blr_img">
-            <img
+          <img
             src="/04_Project_card/image/Bangalore_poto.jpg"
             alt="photo"
             class="image_1"
           />
         </div>
         <div class="like_share">
-          <div class="impresation"> 
+          <div class="impresation">
             <p class="liks_number">546</p>
-            <img src="/04_Project_card/image/link.png" alt="like_icon"class="likes">
+            <img
+              src="/04_Project_card/image/link.png"
+              alt="like_icon"
+              class="likes"
+            />
           </div>
           <div class="impresation hearts">
             <p>34K</p>
-            <img src="/04_Project_card/image/heart.png" alt="heart_icon" class="heart">
+            <img
+              src="/04_Project_card/image/heart.png"
+              alt="heart_icon"
+              class="heart"
+            />
           </div>
         </div>
         <div class="about">
-          <p>Bengaluru is one of the fastest-growing metropolises in India. 
-            As of 2023, the metropolitan area had an estimated GDP of $359.9 billion, 
-            and is one of the most productive metro areas of India. 
-            The city is a major center for information technology (IT), 
-            and is consistently ranked amongst the world's fastest growing technology hubs. 
-            It is widely regarded as the "Silicon Valley of India", 
-            as the largest hub and exporter of IT services in the country. 
-            Manufacturing is a major contributor to the economy 
-            and the city is also home to several state-owned manufacturing companies.
-            Bengaluru also hosts several institutes of national importance in higher education. 
-            </p>
+          <p>
+            Bengaluru is one of the fastest-growing metropolises in India. As of
+            2023, the metropolitan area had an estimated GDP of $359.9 billion,
+            and is one of the most productive metro areas of India. The city is
+            a major center for information technology (IT), and is consistently
+            ranked amongst the world's fastest growing technology hubs. It is
+            widely regarded as the "Silicon Valley of India", as the largest hub
+            and exporter of IT services in the country. Manufacturing is a major
+            contributor to the economy and the city is also home to several
+            state-owned manufacturing companies. Bengaluru also hosts several
+            institutes of national importance in higher education.
+          </p>
         </div>
-        
       </div>
+      <!-------------------- shoes card------>
       <div class="container_2">
         <div class="carousel">
-          <button class="carousel-btn prev" onclick="changeSlide(-1)" >&#10094;</button>
+          <button class="carousel-btn prev" onclick="changeSlide(-1)">
+            &#10094;
+          </button>
           <div class="carousel-slides">
             <img
-            src="/04_Project_card/image/shoes_1.jpg"
-            alt="bangalore"
-            class="slide active"
-          />
-          <img
-            src="/04_Project_card/image/Shoes_2.jpg"
-            alt="photo"
-            class="slide"
-          />
-          <img
-            src="/04_Project_card/image/shoes.jpg"
-            alt="photo"
-            class="slide"
-          />
+              src="/04_Project_card/image/shoes_1.jpg"
+              alt="bangalore"
+              class="slide active"
+            />
+            <img
+              src="/04_Project_card/image/Shoes_2.jpg"
+              alt="photo"
+              class="slide"
+            />
+            <img
+              src="/04_Project_card/image/shoes.jpg"
+              alt="photo"
+              class="slide"
+            />
           </div>
-          <button class="carousel-btn next" onclick="changeSlide(1)" >&#10095;</button>
-          
+          <button class="carousel-btn next" onclick="changeSlide(1)">
+            &#10095;
+          </button>
         </div>
-        
-        <div class="like_share">
-          
+        <div class="product_details">
+          <div class="price">
+            <h3>Nike Shoes</h3>
+            <h3>$45</h3>
+          </div>
+          <div class="detail">
+            <a href="" class="details_link">View Details</a>
+            <!-----------------Popup card of shoes details------------------- -->
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3 id="modal-product-title">Product Details</h3>
+                <p><strong>Product:</strong> Nike Shoes</p>
+                <p><strong>Size:</strong> U6,U7,U8,U9</p>
+                <p>
+                  <strong>Description:</strong> High-quality Nike shoes for
+                  running and sports.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="about">
-          
+        <div class="buy">
+          <button type="button">Buy</button>
+          <button type="button">Add Cart</button>
         </div>
       </div>
     </div>
+
     <script src="/04_Project_card/script.js"></script>
   </body>
 </html>
