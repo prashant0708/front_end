@@ -6,7 +6,8 @@ let num2=8
     
 }console.log(`${num2} is greater than ${num1}`);
 */
-// check if a string is equal to another string
+
+///***************************************  check if a string is equal to another string
 
 let str1='Prashant'
 let str2='prashant'
@@ -15,7 +16,7 @@ let str2='prashant'
     
 // }else{console.log("str1 is not equal to star2")};
 
-// check type of number is integer
+// ***************************************** check type of number is integer
 
 let score= "230";
 
@@ -26,7 +27,7 @@ if (typeof score === "number"){
 }
 
 
-// check the boolean value is ture or flase
+//***************************************** check the boolean value is true or false
 
 // let isloggined=true
 // if (isloggined){
@@ -35,7 +36,7 @@ if (typeof score === "number"){
 // }else{console.log('No he is not loggined' );
 // }
 
-//////////////////check if an array is empty or not
+//***************************************  check if an array is empty or not
 let arry=['Prashant']
 console.log(arry.length);
 
