@@ -33,7 +33,7 @@ for (let i=0; i<cities.length;i++){
     VisitedCities.push(cities[i])
     }
 
-console.log(VisitedCities);
+// console.log(VisitedCities);
 
 
 
@@ -43,14 +43,38 @@ console.log(VisitedCities);
 store the numbers before `4` in an array named `smallNumbers`.
 */
 
-for (const element of object) {
+let num1=[1,2,3,4,5]
+let smallNumbers=[]
+
+for (const num of num1) {
+    if (num===4) {
+        break
+        
+    }
+    smallNumbers.push(num)
     
 }
+// console.log(smallNumbers);
+
 
 /* 
 4. Write a `for-of` loop to iterate through the array ["Chai","green tea","hebral tea","black tea"]
 and skip the `"herbal tea"`. Store the other teas in a new array named `preferredTeas`.
 */
+
+let TeaType=["Chai","green tea","herbal tea","black tea"]
+let preferredTeas=[]
+for (const tea of TeaType) {
+    if (tea==='herbal tea') {
+        continue
+        
+    }
+    preferredTeas.push(tea) 
+}
+// console.log(
+//     preferredTeas
+// );
+
 
 
 /* 
@@ -66,6 +90,25 @@ and skip the `"herbal tea"`. Store the other teas in a new array named `preferre
 
 */
 
+let citiesPopulation = {
+    "London": 8900000,
+    "New York": 8400000,
+    "Paris": 2200000,
+    "Berlin": 3500000
+};
+
+let newcityPopulations={}
+
+for (const key in citiesPopulation) {
+    if (key==='Berlin') {
+        break
+        
+    }
+    newcityPopulations[key]=citiesPopulation[key]  
+}
+// console.log(newcityPopulations);
+
+
 
 
 /* 
@@ -80,18 +123,60 @@ let worldCities = {
 };
 
 */
+let worldCities = {
+    "Sydney": 5000000,
+    "Tokyo": 9000000,
+    "Berlin": 3500000,
+    "Paris": 2200000
+};
+let largeCities={}
+for (const key in worldCities) {
+    if (worldCities[key]>3000000) {
+        largeCities[key]=worldCities[key]
+        
+    }
+   
+    
+}
+// console.log(largeCities);
 
 
-/* 
-7. Write a `forEach` loop that iterates through the array `["earl grey", "green tea", "chai", "oolong tea"]`. 
-   Stop the loop when `"chai"` is found, and store all previous tea types in an array named `availableTeas`.
-*/
+
+let myteaType = ["earl grey", "green tea", "chai", "oolong tea"];
+let availableTeas = [];
+
+myteaType.forEach(function(tea) {
+    if (tea === "chai") {
+        return; // Stops further iterations but doesn't break the loop
+    }
+    availableTeas.push(tea);
+});
+
+// console.log(availableTeas); // ["earl grey", "green tea"]
+
+
+
 
 
 /* 
 8. Write a `forEach` loop that iterates through the array `["Berlin", "Tokyo", "Sydney", "Paris"]`. 
    Skip `"Sydney"` and store the other cities in a new array named `traveledCities`.
 */
+
+let mycities=["Berlin", "Tokyo", "Sydney", "Paris"]
+let traveledCities=[]
+
+mycities.forEach(function(city) {
+    if (city=='Sydney') {
+        return
+        
+    }
+    traveledCities.push(city)
+    
+});
+// console.log(traveledCities);
+
+
 
 
 
@@ -100,6 +185,19 @@ let worldCities = {
    Skip the value `7` and multiply the rest by 2. Store the results in a new array named `doubledNumbers`.
 */
 
+let number=[2,5,7,9]
+let doubledNumbers=[]
+for (let i = 0; i < number.length; i++) {
+    if (number[i]==7) {
+        continue
+        
+    }
+    doubledNumbers.push(number[i]*2)
+    
+}
+// console.log(doubledNumbers);
+
+
 
 
 /* 
@@ -107,5 +205,20 @@ let worldCities = {
     and stop when the length of the current tea name is greater than 10. 
     Store the teas iterated over in an array named `shortTeas`.
 */
+
+let teaTypes=["chai", "green tea", "black tea", "jasmine tea", "herbal tea"]
+let shortTeas=[]
+
+
+
+
+for (const tea of teaTypes) {
+    if (tea.length >10) {
+        continue
+        
+    }
+    shortTeas.push(tea)
+}
+console.log(shortTeas);
 
 
