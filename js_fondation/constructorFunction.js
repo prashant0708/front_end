@@ -21,4 +21,46 @@ function Person_detail(name,age){
 }
 
 let person2= new Person_detail('Prashant','18')
-console.log(person2.greet());
+// console.log(person2.greet());
+
+//>>>>>>>>>> create a constructor function and its method using the prototype.
+
+function person(first_name,last_name){
+    this.first_name=first_name
+    this.last_name=last_name
+}
+
+// defining a method on prototype >>>>>Prototype method is more beneficiary, It save the memory usage.
+
+person.prototype.getfullname= function() {
+    return `Complete name is ${this.first_name} ${this.last_name}`;
+};
+
+let student =  new person("David","Galduroz");
+
+console.log(student.getfullname());
+
+// >>>>>> create function constructor with error
+
+function drink(type){
+   
+    if (!new.target) {
+        throw new Error('drink must be called with new keyword');
+        
+        
+    }
+    this.type=type
+}
+
+drink.prototype.display=function(){
+    return `your ${this.type} drink is ready`
+}
+
+// let tea=drink("tea")
+let coffee= new drink("coffee")
+
+// console.log(tea.display());
+console.log(coffee.display());
+
+
+
